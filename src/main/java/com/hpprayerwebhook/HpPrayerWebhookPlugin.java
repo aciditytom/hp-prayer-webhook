@@ -33,18 +33,6 @@ public class HpPrayerWebhookPlugin extends Plugin
     private boolean hpTriggered = false;
     private boolean prayerTriggered = false;
 
-    @Override
-    protected void startUp() throws Exception
-    {
-        System.out.println("Webhooks for HP and Prayer started!");
-    }
-
-    @Override
-    protected void shutDown() throws Exception
-    {
-        System.out.println("Webhooks for HP and Prayer stopped!");
-    }
-
     @Subscribe
     public void onGameTick(GameTick tick)
     {
